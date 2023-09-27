@@ -1,55 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* Stylizacja tabelki */
         table {
             border-collapse: collapse;
-            width: 300px; /* Szerokość tabelki */
-            margin: 20px; /* Margines dla wyglądu */
+            width: 100%;
         }
-        
-        /* Stylizacja komórek */
-        td, th {
+        table, th, td {
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        th, td {
             padding: 10px;
             text-align: center;
-            border: 1px solid #ddd; /* Grubość i kolor obramowania */
-            border-radius: 10px; /* Zaokrąglenie krawędzi */
         }
-        
-        /* Stylizacja nagłówka tabelki */
         th {
-            background-color: #3498db; /* Kolor tła nagłówka */
-            color: white; /* Kolor tekstu nagłówka */
+            background-color: #FFA500; /* Kolor nagłówka */
+            color: white;
         }
-        
-        /* Stylizacja komórek wiersza parzystego */
-        tr:nth-child(even) {
-            background-color: #f2f2f2; /* Kolor tła komórek wiersza parzystego */
-        }
-        
-        /* Stylizacja komórek wiersza nieparzystego */
         tr:nth-child(odd) {
-            background-color: #ffffff; /* Kolor tła komórek wiersza nieparzystego */
+            background-color: #00FF00; /* Kolor komórek dla nieparzystych wierszy */
+        }
+        tr:nth-child(even) {
+            background-color: #0000FF; /* Kolor komórek dla parzystych wierszy */
+        }
+        .red-yellow {
+            background-color: #FF0000; /* Kolor czerwony */
         }
     </style>
 </head>
 <body>
     <table>
         <tr>
-            <th>Nagłówek 1</th>
-            <th>Nagłówek 2</th>
-            <th>Nagłówek 3</th>
+            <th colspan="3">Pierwszy wiersz połączony</th>
         </tr>
         <tr>
-            <td>Komórka 1</td>
-            <td>Komórka 2</td>
-            <td>Komórka 3</td>
+            <td class="red-yellow" colspan="2">Czerwony</td>
+            <td style="background-color: #0000FF;">Niebieski</td>
         </tr>
         <tr>
-            <td>Komórka 4</td>
-            <td>Komórka 5</td>
-            <td>Komórka 6</td>
+            <td style="background-color: #FFFF00;">Żółty</td>
+            <td style="background-color: #FF00FF;">Fioletowy</td>
+            <td style="background-color: #008080;">Cyjan</td>
+        </tr>
+        <tr>
+            <th colspan="3">Ostatni wiersz połączony</th>
         </tr>
     </table>
 </body>
