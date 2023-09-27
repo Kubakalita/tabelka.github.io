@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Stylizacja tabelki */
+        table {
+            border-collapse: collapse;
+            width: 300px; /* Szerokość tabelki */
+            margin: 20px; /* Margines dla wyglądu */
+        }
+        
+        /* Stylizacja komórek */
+        td, th {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd; /* Grubość i kolor obramowania */
+            border-radius: 10px; /* Zaokrąglenie krawędzi */
+        }
+        
+        /* Stylizacja nagłówka tabelki */
+        th {
+            background-color: #3498db; /* Kolor tła nagłówka */
+            color: white; /* Kolor tekstu nagłówka */
+        }
+        
+        /* Stylizacja komórek wiersza parzystego */
+        tr:nth-child(even) {
+            background-color: #f2f2f2; /* Kolor tła komórek wiersza parzystego */
+        }
+        
+        /* Stylizacja komórek wiersza nieparzystego */
+        tr:nth-child(odd) {
+            background-color: #ffffff; /* Kolor tła komórek wiersza nieparzystego */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Nagłówek 1</th>
+            <th>Nagłówek 2</th>
+            <th>Nagłówek 3</th>
+        </tr>
+        <tr>
+            <td>Komórka 1</td>
+            <td>Komórka 2</td>
+            <td>Komórka 3</td>
+        </tr>
+        <tr>
+            <td>Komórka 4</td>
+            <td>Komórka 5</td>
+            <td>Komórka 6</td>
+        </tr>
+    </table>
+</body>
+</html>
